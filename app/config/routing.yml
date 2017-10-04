@@ -1,0 +1,13 @@
+admins:
+    resource: "routing/admin/main.yml"
+    prefix: /admin
+
+toro_coin_register_api_event:
+    resource: "@ToroRegisterBundle/Resources/config/routing/api/main.yml"
+    prefix: /api
+
+LiipImagineBundle:
+    resource: "@LiipImagineBundle/Resources/config/routing.yaml"
+
+phpmob_media:
+    resource: "@PhpMobMediaBundle/Resources/config/routing/main.yml"
