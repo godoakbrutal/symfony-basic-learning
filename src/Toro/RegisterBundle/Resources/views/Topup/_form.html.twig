@@ -1,0 +1,14 @@
+{{ form_errors(form) }}
+
+{{ form_row(form.user, { chooser: {
+    remote: {
+        url: path('ajax_admin_web_user_search'),
+        value: 'username',
+        text: 'email',
+    },
+    render: {
+        option: 'user_avatar_render'
+    }
+} }) }}
+{{ form_row(form.coin) }}
+{{ form_row(form.note) }}

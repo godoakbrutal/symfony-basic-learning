@@ -12,7 +12,6 @@ class AppKernel extends Kernel
             new \Sylius\Bundle\MailerBundle\SyliusMailerBundle(),
             new \Sylius\Bundle\UserBundle\SyliusUserBundle(),
             new \PhpMob\CoreBundle\PhpMobCoreBundle(),
-            new \Toro\CoinBundle\ToroCoinBundle(),
             new \Toro\RegisterBundle\ToroRegisterBundle(),
 
             // CMS

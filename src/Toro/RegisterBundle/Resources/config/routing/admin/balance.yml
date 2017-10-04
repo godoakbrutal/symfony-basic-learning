@@ -1,0 +1,23 @@
+sylius_admin_balance:
+    type: sylius.resource
+    resource: |
+        alias: toro_coin.balance
+        section: admin
+        templates: ChangMin:Crud
+        grid: admin_balance
+        permission: true
+        except: ["create", "update", "show", "delete"]
+        vars:
+            all:
+                templates:
+                    form: ToroCoinBundle:Balance:_form.html.twig
+            index:
+                icon: fa fa-user
+                header: "Web Users"
+            create:
+                icon: fa fa-user-plus
+                header: "Create User"
+                breadcrumb:
+                    index:
+                        icon: fa fa-user
+                        label: "Web Users"

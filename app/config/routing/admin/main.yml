@@ -7,8 +7,5 @@ phpmob_changmin_security:
 phpmob_core_admin:
     resource: "@PhpMobCoreBundle/Resources/config/routing/admin/main.yml"
 
-toro_admin_coin:
-    resource: "@ToroCoinBundle/Resources/config/routing/admin/main.yml"
-
 toro_admin_register:
     resource: "@ToroRegisterBundle/Resources/config/routing/admin/main.yml"

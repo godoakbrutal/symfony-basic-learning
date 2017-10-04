@@ -1,0 +1,6 @@
+sylius_resource:
+    resources:
+        toro_coin_register.event:
+            classes:
+                model: Toro\RegisterBundle\Model\Event
+                interface: Toro\RegisterBundle\Model\EventInterface

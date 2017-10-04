@@ -19,25 +19,25 @@ ChangMin.updateMenu(function (menu) {
                 }
             }
         }))
-        .set('torocoin', ChangMin.createMap({
-            label: 'Coins',
-            children: {
-                balance: {
-                    icon: 'fa fa-bitcoin',
-                    label: 'Balance',
-                    link: '{{ path('toro_coin_admin_balance_index') }}',
-                },
-                transaction: {
-                    icon: 'fa fa-exchange',
-                    label: 'Transactions',
-                    link: '{{ path('toro_coin_admin_transaction_index') }}',
-                },
-                topup: {
-                    icon: 'fa fa-heart',
-                    label: 'Topup',
-                    link: '{{ path('toro_coin_admin_transaction_topup_index') }}',
-                },
-            }
-        }))
+        {#.set('torocoin', ChangMin.createMap({#}
+            {#label: 'Coins',#}
+            {#children: {#}
+                {#balance: {#}
+                    {#icon: 'fa fa-bitcoin',#}
+                    {#label: 'Balance',#}
+                    {#link: '{{ path('toro_coin_admin_balance_index') }}',#}
+                {#},#}
+                {#transaction: {#}
+                    {#icon: 'fa fa-exchange',#}
+                    {#label: 'Transactions',#}
+                    {#link: '{{ path('toro_coin_admin_transaction_index') }}',#}
+                {#},#}
+                {#topup: {#}
+                    {#icon: 'fa fa-heart',#}
+                    {#label: 'Topup',#}
+                    {#link: '{{ path('toro_coin_admin_transaction_topup_index') }}',#}
+                {#},#}
+            {#}#}
+        {#}))#}
     ;
 });

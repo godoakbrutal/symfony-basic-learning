@@ -1,0 +1,15 @@
+toro_coin_register_api_event_index:
+    path: /
+    methods: [GET]
+    defaults:
+        _controller: toro_coin_register.controller.event:indexAction
+        _sylius:
+            serialization_version: $version
+            serialization_groups: [Default]
+            paginate: $limit
+            filterable: true
+            sortable: true
+#            criteria:
+#                active: true
+            sorting:
+                name: ASC

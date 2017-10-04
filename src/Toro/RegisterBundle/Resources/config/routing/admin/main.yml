@@ -1,0 +1,8 @@
+#admin_balance:
+#    resource: "@ToroCoinBundle/Resources/config/routing/admin/balance.yml"
+#
+#admin_transaction:
+#    resource: "@ToroCoinBundle/Resources/config/routing/admin/transaction.yml"
+#
+#admin_topup:
+#    resource: "@ToroCoinBundle/Resources/config/routing/admin/topup.yml"

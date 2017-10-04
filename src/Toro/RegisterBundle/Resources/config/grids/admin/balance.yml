@@ -1,0 +1,55 @@
+sylius_grid:
+    grids:
+        admin_balance:
+            driver:
+                name: doctrine/orm
+                options:
+                    class: "%toro_coin.model.balance.class%"
+            limits: [20]
+            sorting:
+                coin: desc
+            fields:
+                id:
+                    type: text
+                    label: ID
+                    sortable: ~
+                    options:
+                        width: 200px
+                coin:
+                    type: text
+                    label: Coin
+                    sortable: ~
+                    options:
+                        width: 120px
+                        align: right
+                username:
+                    type: text
+                    label: Username
+                    path: user
+                    sortable: user.username
+                    options:
+                        width: 200px
+                updatedAt:
+                    type: localizeddate
+                    label: Updated At
+                    sortable: ~
+                    options:
+                        width: auto
+            filters:
+                search:
+                    type: string
+                    label: Search
+                    options:
+                        default: true
+                        fields:
+                            - user.email
+                            - user.username
+            actions:
+                main:
+                    create_topup:
+                        label: Topup
+                        type: link
+                        options:
+                            icon: fa fa-plus
+                            class: btn btn-primary
+                            route: toro_coin_admin_transaction_topup_index

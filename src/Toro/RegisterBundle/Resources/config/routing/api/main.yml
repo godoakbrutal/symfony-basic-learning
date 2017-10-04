@@ -1,0 +1,3 @@
+toro_coin_register_api_event:
+    resource: "event.yml"
+    prefix: /events

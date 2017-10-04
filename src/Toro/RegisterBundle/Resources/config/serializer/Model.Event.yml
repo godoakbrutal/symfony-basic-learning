@@ -1,0 +1,19 @@
+Toro\RegisterBundle\Model\Event:
+    exclusion_policy: ALL
+    xml_root_name: event
+
+    properties:
+        id:
+            expose: true
+
+        name:
+            expose: true
+
+        location:
+            expose: true
+
+        startTime:
+            expose: true
+
+        endTime:
+            expose: true

@@ -7,7 +7,6 @@ imports:
     - { resource: "@PhpMobCmsBundle/Resources/config/app/main.yml" }
     - { resource: "@PhpMobCoreBundle/Resources/config/app/main.yml" }
 
-    - { resource: "@ToroCoinBundle/Resources/config/app/main.yml" }
     - { resource: "@ToroRegisterBundle/Resources/config/app/main.yml" }
 
 framework:
